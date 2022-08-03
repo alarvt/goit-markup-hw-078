@@ -42,7 +42,7 @@ body {
     background: #FFFFFF;
     padding-top: 24px;
     height: 80px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header .conteiner {
     display: flex;
@@ -101,7 +101,12 @@ body {
 }
 
 .nav-hover:hover {
+    color: #2196F3;    
+}
+
+.nav-hover:focus {
     color: #2196F3;
+    /* background-color: tomato; */  
 }
 
 /*-----------sectoin slogan----------*/
@@ -111,6 +116,11 @@ body {
     /* width: 1600px; */
     height: 600px;
     /* margin: auto; */
+    padding-top: 200px;
+}
+
+.slogan-conteiner {
+    /* margin-bottom: 200px; */
 }
 
 .slogan-title {
@@ -120,12 +130,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;     
-    padding-top: 200px;
-}
-
-.slogan-button {
-    margin: auto;
+    color: #FFFFFF; 
+    margin-bottom: 30px;   
+    /* padding-top: 200px; */
+    /* margin-top: 200px; */
 }
 
 .slogan-text {
@@ -141,25 +149,23 @@ body {
     background-color: #2196F3;
     /* margin-top: 50px; 
     margin-left: 485px; */
-    border-radius: 4px;    
-}
-
-.slogan-button {
-    padding-top: 30px;
-    padding-left: 475px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;    
 }
 
 /*-----------subtitle----------*/
 
 .section-subtitle {
     background: #FFFFFF;
+    padding-top: 94px;
 }
 
 .subtitle-list {
     /* margin-top: 94px; */
     display: flex;
     gap: 30px;
-    padding-top: 94px;
+    /* padding-top: 94px */;
 }
 
 .subtitle-title {
@@ -186,14 +192,16 @@ body {
 .section-subject {
     background: #FFFFFF;
     /* margin-top: 94px; */
+    padding-top: 50px;
+    
 }
 
 .subject-list {
     display: flex;
     gap: 30px;
     /* margin-top: 50px; */
-    padding-top: 50px;
-    padding-bottom: 94px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 94px; */
 }
 
 .subject-title {
@@ -203,8 +211,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color:  var(--main-title-color);
-    padding-top: 94px;
-    /* padding-bottom: 94px; */
+    /* padding-top: 50px */
+    padding-bottom: 50px;
 }
 
 /*-----------team----------*/
@@ -216,6 +224,8 @@ body {
    /*  margin-bottom: 94px; */
     /* width: 1600px; */
     /* height: 648px;  */
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title {
@@ -225,14 +235,15 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color:  #212121;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    /* padding-bottom: 50px; */
+    
 }
 
 .team-list {
     display: flex;
     gap: 30px;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px;  */
 }
 
 .team-item {
@@ -276,9 +287,6 @@ body {
     height: 252px;
     /* width: 1600px; */
     margin: auto;
-}
-
-.footer-logo {
     padding-top: 60px;
 }
 
@@ -292,15 +300,11 @@ body {
     color: #FFFFFF;
 }
 
-.footer-address {
-    padding-top: 20px;
-}
-
 .footer-contact {
     display: flex;
     flex-direction: column;
     gap: 9px;
-    
+    padding-top: 20px;    
 }
 
 .footer-item-pre {
@@ -326,13 +330,16 @@ body {
 
 .button-section {
     background: #FFFFFF;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+     
 }
 .button-list {
     display: flex;
     gap: 8px;
-    padding-left: 280px;
-    padding-top: 94px;
+    justify-content: center;
+/*     padding-left: 280px;
+    padding-top: 94px; */
 }
 .button-item {
     font-family: 'Roboto';
@@ -360,8 +367,9 @@ body {
     display: flex;
     gap: 26px;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
+/*     padding-top: 50px;
+    padding-bottom: 94px; */
 }
 
 .sutitle-name {

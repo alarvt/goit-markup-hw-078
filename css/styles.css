@@ -114,9 +114,10 @@ body {
 .slogan {
     background: #2F303A;
     /* width: 1600px; */
-    height: 600px;
+    /* height: 600px; */
     /* margin: auto; */
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .slogan-conteiner {
@@ -192,7 +193,8 @@ body {
 .section-subject {
     background: #FFFFFF;
     /* margin-top: 94px; */
-    padding-top: 50px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     
 }
 
@@ -212,7 +214,7 @@ body {
     letter-spacing: 0.03em;
     color:  var(--main-title-color);
     /* padding-top: 50px */
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 /*-----------team----------*/
@@ -284,10 +286,11 @@ body {
 
 .footer {
     background-color: #2F303A;
-    height: 252px;
+    /* height: 252px; */
     /* width: 1600px; */
     margin: auto;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-studio {
@@ -304,7 +307,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 9px;
-    padding-top: 20px;    
+    margin-top: 20px;    
 }
 
 .footer-item-pre {
@@ -355,7 +358,10 @@ body {
     border-color: #F5F4FA;
     padding-left: 22px;
     padding-right: 22px;
-    height: 50px;
+    /* height: 50px; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+
 }
 
 .button-hover:hover {
@@ -365,7 +371,7 @@ body {
 
 .images-list {
     display: flex;
-    gap: 26px;
+    gap: 21px;
     flex-wrap: wrap;
     margin-top: 50px;
 /*     padding-top: 50px;
@@ -391,7 +397,7 @@ body {
 }
 
 .images-item {
-    border: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;    
 }
 
 .name-text {

@@ -194,6 +194,26 @@ body {
     padding-top: 10px;
 }
 
+.subtitle-list-icons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+.subtitle-item-icons {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    gap: 30px;
+    border-radius: 4px;
+    
+}
+.subtitle-soc-icons {
+    margin: auto;
+    justify-content: center;    
+}
+
 /*-----------subject----------*/
 
 .section-subject {

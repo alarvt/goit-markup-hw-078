@@ -386,36 +386,32 @@ img {
 .regular-clients-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* border: 1px solid #AFB1B8; */
+    /* border-radius: 4px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-.regular-clients-link {  
-/*     width: 170px;
-    height: 92px; */
+.regular-clients-link { 
+    width: 100%;
+    height: 100%; 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center; 
-    fill: #AFB1B8;
+    color: #AFB1B8;
           
 }
 .regular-clients-icons {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-/* .regular-clients-item:hover,
-.regular-clients-item:focus {
-    background-color: #2196F3;
-} */
-
-.regular-clients-link:hover .regular-clients-icons,
-.regular-clients-link:focus .regular-clients-icons {
-    fill: #2196F3;
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+    border-color: #2196F3;
+    color: #2196F3;
 }
 
 

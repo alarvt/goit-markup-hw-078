@@ -136,7 +136,7 @@ body {
          rgba(47, 48, 58, 0.4)),
     url(../images/Slogan.jpg);
     /* background: #2F303A; */
-    width: 1600px;
+    max-width: 1600px;
     /* height: 600px; */
     margin: auto;
     padding-top: 200px;
@@ -196,6 +196,7 @@ body {
 }
 
 .subtitle-title {
+    padding-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

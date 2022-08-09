@@ -228,11 +228,14 @@ body {
     display: flex;
     gap: 30px;
     border-radius: 4px;
-    
+    align-items: center;  
+    justify-content: center;
 }
 .subtitle-soc-icons {
-    margin: auto;
-    justify-content: center;    
+    /* margin: auto; */
+    /* display: flex;
+    align-items: center; */    
+    /* justify-content: center;     */
 }
 
 /*-----------subject----------*/

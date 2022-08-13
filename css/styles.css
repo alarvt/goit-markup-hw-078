@@ -107,6 +107,10 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.nav-hover::after {
+    content: 'www';
+}
+
 
 .header-contact-pre-icon {
     margin-right: 10px;
@@ -643,7 +647,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: #00000033;
-    
+    transition: 1000ms;    
 }
 .modal {
     position: absolute;
@@ -661,6 +665,12 @@ img {
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .is-hidden {

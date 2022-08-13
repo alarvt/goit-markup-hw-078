@@ -46,8 +46,7 @@ body {
 }
 .header .conteiner {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 .logo-web {
     font-family: 'Raleway';
@@ -57,8 +56,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
-    margin-right: 94px;
-     
+    margin-right: 94px;     
 }
 .logo-studio {
     font-family: 'Raleway';
@@ -68,8 +66,6 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
-}
-.header-nav {        
 }
 
 .header-nav-list {
@@ -89,7 +85,6 @@ body {
     display: flex;
     margin-left: auto;
     gap: 50px;
-
 }
 
 .header-contact {
@@ -100,19 +95,21 @@ body {
     color: var(--main-text-color);
 }
 
-.nav-hover:hover {
+.nav-hover:hover,
+.nav-hover:focus {
     color: #2196F3;    
 }
 
-.nav-hover:focus {
-    color: #2196F3;
-    /* background-color: tomato; */  
+.nav-hover,
+.header-contact-pre-link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 
 .header-contact-pre-icon {
     margin-right: 10px;
-    color: tomato;
-
 }
 
 .header-contact-pre-link {
@@ -174,8 +171,6 @@ body {
     height: 50px;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    /* margin-top: 50px; 
-    margin-left: 485px; */
     border-radius: 4px;
     margin: 0 auto;
     display: block;    
@@ -297,11 +292,6 @@ img {
 
 .section-team {
     background: #F5F4FA;
-    /* margin: auto; */
-    /* margin-top: 94px; */
-   /*  margin-bottom: 94px; */
-    /* width: 1600px; */
-    /* height: 648px;  */
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -313,15 +303,12 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color:  #212121;
-    margin-bottom: 50px;
-    /* padding-bottom: 50px; */
-    
+    margin-bottom: 50px;    
 }
 
 .team-list {
     display: flex;
     gap: 30px;
-    /* padding-bottom: 94px;  */
 }
 
 .team-item {
@@ -329,8 +316,7 @@ img {
     border: 1px solid #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    
-    
+      
 }
 
 .team-subtitle {
@@ -339,7 +325,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color:  var(--main-title-color);
-    /* padding-top: 30px; */
 }
 
 .team-text {
@@ -354,9 +339,7 @@ img {
 .team-subtitle-text {
     padding-top: 30px;
     background-color: #FFFFFF;
-    /* border-radius: 0px 0px 4px 4px; */
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;    
 }
 
 .team-soc {
@@ -374,10 +357,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+    
 .team-soc-icon {
     fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .taem-soc-link:hover,
@@ -412,11 +402,6 @@ img {
 .regular-clients-item {
     width: 170px;
     height: 92px;
-    /* border: 1px solid #AFB1B8; */
-    /* border-radius: 4px; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .regular-clients-link { 
@@ -428,6 +413,9 @@ img {
     align-items: center;
     justify-content: center; 
     color: #AFB1B8;
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
           
 }
 .regular-clients-icons {
@@ -445,8 +433,6 @@ img {
 
 .footer {
     background-color: #2F303A;
-    /* height: 252px; */
-    /* width: 1600px; */
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -489,7 +475,6 @@ img {
 
 .footer-icon {
     padding-top: 8px;
-    /* display: flex; */
 }
 .footer-icon-title {
     font-weight: 700;
@@ -504,8 +489,7 @@ img {
     display: flex;
     gap: 10px;
 }
-.footer-icon-item {
-}
+
 .footer-icon-link {
     width: 44px;
     height: 44px;
@@ -514,6 +498,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    
 }
 .footer-icon-icons {
     fill: #FFFFFF;
@@ -561,10 +549,14 @@ img {
     padding-right: 22px;
     padding-top: 6px;
     padding-bottom: 6px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    
 }
 
-.button-hover:hover,
-.button-hover:focus {
+.button-item:hover,
+.button-item:focus {
     background-color: #2196F3;
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -603,7 +595,10 @@ img {
 .images-item {
     width: 370px;
     border: 1px solid #EEEEEE;
-    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+        
 }
 
 .images-item:hover .images-top-text {
@@ -638,9 +633,6 @@ img {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
-/*     border-left: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE; */
 }
 
 /*-----------modal----------*/
@@ -661,6 +653,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .modal-close {

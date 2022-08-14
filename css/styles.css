@@ -79,6 +79,11 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
+
+    position: relative;
+    /* display: inline-block; */
+    /* text-transform: uppercase; */
+    /* text-decoration: none;  */
 }
 
 .header-contact-pre {
@@ -107,8 +112,29 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.nav-hover::after {
-    content: 'www';
+.hr {
+    /* position: relative; */
+}
+
+.header-item::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    width: 0;
+    background: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.header-item:hover::after {
+    top: 44px;
+    left: 0;
+    width: 100%;
 }
 
 

@@ -688,9 +688,17 @@ img {
 }
 
 .modal-close {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center; 
     position: absolute;
     right: 10px;
     top: 10px;
+    border-radius: 50%;
+    border: 1px solid #0000001A
+    
+    
 }
 
 .is-hidden {
@@ -699,8 +707,10 @@ img {
     pointer-events: none;
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.close-black {
+    
+}
+
+.modal-close-black {
+
 }

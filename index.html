@@ -368,13 +368,59 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal modal-close-black">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="close-black" width="11" height="11">
                     <use href="./images/close-black.svg#icon-close-black"></use>
-                </svg>
+                </svg>                
             </button>
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="modal-form">
+                <label>
+                    <span class="input-title">Имя</span>
+                    <input 
+                    type="text" 
+                    class="form-input" 
+                    name="user-name" 
+                    placeholder
+                    required>
+                </label>
+                
+                <label>
+                    <span class="input-title">Телефон</span>
+                    <input 
+                    type="tel" 
+                    class="form-input" 
+                    name="user-tel" 
+                    placeholder
+                    title="+380501111111"                    
+                    required>         
+                </label>
+                
+                <div>
+                    <label for="user-email" class="input-title">Почта</label>                    
+                    <input 
+                    type="email" 
+                    class="form-input" 
+                    name="user-email" 
+                    placeholder 
+                    required
+                    id="user-email">
+                </div>
+                <div>
+                    <label for="user-comment" class="input-title">Комментарий</label>
+                    <textarea 
+                    name="user-comment" 
+                    id="user-comment" 
+                    class="modal-text"
+                    placeholder="Введите текст"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="modal-button">Отправить</button>
+            </form>
+
         </div>
     </div>
 

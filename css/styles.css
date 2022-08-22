@@ -923,4 +923,5 @@ img {
 .close-black:hover,
 .close-black:focus {
     fill: #2196F3;
+    cursor: pointer;
 }

@@ -1,2 +1,16 @@
+@import './utils/var.scss';
+@import './base/reset';
+@import './base/common';
+@import './components/conteiner';
+
 @import './layout/header';
+
+@import './layout/sectoin-slogan';
+@import './layout/subtitle';
+@import './layout/subject';
+@import './layout/team';
+@import './layout/regular-clients';
+@import './layout/button-section';
+@import './layout/modal';
+
 @import './layout/footer';

@@ -1,0 +1,90 @@
+.team {
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color:  #212121;
+        margin-bottom: 50px;    
+    }
+    
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &-item {
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          
+    }
+    
+    &-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color:  var(--main-title-color);
+    }
+    
+    &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color:  var(--main-text-color);
+        padding-top: 10px;
+    }
+    
+    &-subtitle-text {
+        padding-top: 30px;
+        background-color: #FFFFFF;
+        padding-bottom: 30px;    
+    }
+    
+    &-soc {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 16px;
+    }
+    
+    .taem-soc-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    }
+    
+        
+    &-soc-icon {
+        fill: #AFB1B8;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    
+    }
+    
+    .taem-soc-link:hover,
+    .taem-soc-link:focus {
+        background-color: #2196F3;
+    }
+    
+    .taem-soc-link:hover .team-soc-icon,
+    .taem-soc-link:focus .team-soc-icon {
+        fill: #FFFFFF;
+    }
+}
+

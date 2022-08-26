@@ -3,71 +3,64 @@
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+}
 
-    &-logo-web {
+.footer .conteiner {
+    display: flex;
+}
+
+.logo {
+    margin-right: 70px;
+
+    &__web {
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: #2196F3;
+        @include font (700, 26px, 1.19, 0.03em);
+        color: var(--main-item-color);
     }
     
-    &-logo-studio {
+    &__studio {
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+        @include font (700, 26px, 1.19, 0.03em);
+        color: var(--main-general-color);
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+    
+    &__item-pre {
+        @include font (400, 14px, 1.7, 0.03em);
+        color: var(--main-general-color);
     }
     
-    &-contact {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-        margin-top: 20px;    
-    }
-    
-    &-item-pre {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-    }
-    
-    &-item {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
+    &__item {
+        @include font (400, 14px, 1.7, 0.03em);
         color: #FFFFFF99;
     }
-    
-    &-icon {
-        padding-top: 8px;
-        margin-right: 93px;
-    }
-    &-icon-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+}
+
+
+
+.network {
+    padding-top: 8px;
+    margin-right: 93px;
+    &__title {
+        @include font (700, 14px, 1.14, 0.03em);
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--main-general-color);
     }
-    &-icon-list {
+    &__list {
         margin-top: 20px;
         display: flex;
         gap: 10px;
     }
     
-    &-icon-link {
+    &__link {
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -78,39 +71,27 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-        
     }
-    &-icon-icons {
-        fill: #FFFFFF;
-    }
-    
-    & .conteiner {
-        display: flex;
+    &__icons {
+        fill: var(--main-general-color);
     }
     
-    &-conteiner {
-        margin-right: 70px;
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--main-item-color);
     }
-    
-    &-icon-link:hover,
-    &-icon-link:focus {
-        background-color: #2196F3;
-    }
-    
-    &-input {
-        padding-top: 8px;
-    }
-    &-input-title {
-        font-weight: 700;
-        line-height: 1.14;
-        font-size: 14px;
+}
+
+.subscription {
+    padding-top: 8px;
+    &__input-title {
+        @include font (700, 14px, 1.14, 0.03em);
         text-transform: uppercase;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--main-general-color);
         margin-bottom: 20px;
         
     }
-    &-form-input {
+    &__form-input {
         width: 358px;
         height: 50px;
         background-color: #2F303A;
@@ -121,7 +102,7 @@
         margin-right: 12px;
         color: rgba(255, 255, 255, 0.6);;
     }
-    &-input-button {
+    &__input-button {
         display: inline-flex;
         width: 200px;
         height: 50px;
@@ -130,21 +111,17 @@
     
         font-family: 'Roboto';
         font-style: normal;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        background: #2196F3;
+        @include font (700, 16px, 1.88, 0.06em);
+        color: var(--main-general-color);
+        background: var(--main-item-color);
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border: none; 
         cursor: pointer;   
     }
     
-    &-icon-button {
+    &__icon-button {
         fill: currentColor;
         margin-left: 10px;
     }
 }
-

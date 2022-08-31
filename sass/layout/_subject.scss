@@ -2,10 +2,16 @@
     background: var(--main-general-color);
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
     
 &__list {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
 &__title {
@@ -13,10 +19,16 @@
     text-align: center;
     color:  var(--main-title-color);
     margin-bottom: 50px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
 &__text {
     position: relative;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
 &__top-text {
@@ -30,11 +42,8 @@
     position: absolute;
     bottom: 0;
     padding-top: 27px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }

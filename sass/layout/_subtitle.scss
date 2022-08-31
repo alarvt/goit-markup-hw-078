@@ -1,6 +1,12 @@
 .subtitle {
     background: #FFFFFF;
     padding-top: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
     
 &-list {
     display: flex;
@@ -10,9 +16,13 @@
 
 &-items {
     width: 100%;
-    @media screen and (min-widht: 768px) {
+    @media screen and (min-width: 768px) {
         max-width: 768px;
-        width: calc((100%-30px)/2);
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        width: calc((100% - 90px) / 4);
     }
 }
 &-title {
@@ -23,6 +33,13 @@
     letter-spacing: 0.03em;
     color:  var(--main-title-color);
     text-align: center;
+    
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 &-text {
@@ -43,5 +60,12 @@
     border-radius: 4px;
     align-items: center;  
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+
 }
 }

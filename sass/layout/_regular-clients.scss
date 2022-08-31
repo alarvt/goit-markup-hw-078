@@ -1,6 +1,14 @@
 .regular-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     
 &-title {
     font-weight: 700;
@@ -12,12 +20,22 @@
 }
 &-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
  }
  &-item {
-    width: 170px;
+    width: calc((100% - 30px) / 2);
     height: 92px;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        width: calc((100% - 150px) / 6);
+    }
+    
 }
 
 &-link { 

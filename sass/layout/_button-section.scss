@@ -5,6 +5,7 @@
 
     &-list {
         display: flex;
+        flex-wrap: wrap;
         gap: 8px;
         justify-content: center;
     }
@@ -26,8 +27,18 @@
         padding-bottom: 6px;
         transition-property: background-color, color, box-shadow;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-        
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        width: 100%;
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
     }
     
     &-item:hover,
@@ -52,11 +63,20 @@
     }
     
     &-item {
-        width: 370px;
+        width: 100%;
         border: 1px solid #EEEEEE;
         transition-property: box-shadow;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            width: calc((100% - 30px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            width: calc((100% - 60px) / 3);
+        }
             
     }
     

@@ -5,13 +5,19 @@
     url(../images/Slogan.jpg);
     max-width: 100%;
     margin: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     @media screen and (min-width: 768px) {
-        max-width: 768px;
+        padding-top: 118px;
+        padding-bottom: 118x;
     }
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    @media screen and (min-width: 1600px) {
+        padding-top: 200px;
+        padding-bottom: 200px;      
     }
     
 &-title {
@@ -32,6 +38,10 @@
         font-size: 44px;
         line-height: 1.36;
     } 
+    @media screen and (min-width: 1600px) {
+        font-size: 44px;
+        line-height: 1.36;        
+    }
 }
 
 &-text {

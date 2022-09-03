@@ -58,6 +58,13 @@ body {
     max-width: 1200px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .conteiner {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 1600px;
+  }
+}
 
 .header {
   background: #FFFFFF;
@@ -73,6 +80,16 @@ body {
   display: flex;
   gap: 50px;
 }
+@media screen and (min-width: 768px) {
+  .header-nav-list {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav-list {
+    max-width: 1200px;
+  }
+}
 .header-item {
   font-weight: 500;
   line-height: 1.14;
@@ -82,9 +99,37 @@ body {
   position: relative;
 }
 .header-contact-pre {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
+  display: none;
+  /*     display: flex;
+      margin-left: auto;
+      gap: 50px; */
+  margin-right: auto;
+  /*     @media screen and (max-width: 480px) {
+          max-width: 480px;
+          display: none;
+      } */
+  /*     @media screen and (min-width: 480px) {
+          max-width: 480px;
+          display: none;
+      } */
+}
+@media screen and (min-width: 768px) {
+  .header-contact-pre {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact-pre {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: auto;
+  }
 }
 .header-contact {
   font-weight: 500;
@@ -92,6 +137,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+@media screen and (min-width: 768px) {
+  .header-contact {
+    max-width: 768px;
+    font-size: 12px;
+  }
 }
 .header-contact-pre-icon {
   margin-right: 10px;
@@ -106,25 +157,86 @@ body {
   fill: #2196F3;
 }
 
+.header-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    max-width: 768px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    max-width: 1200px;
+    display: block;
+  }
+}
+
 .logo-web {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196F3;
-  margin-right: 94px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 480px) {
+  .logo-web {
+    max-width: 480px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-web {
+    max-width: 768px;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-right: 58px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-web {
+    max-width: 1200px;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 88px;
+  }
 }
 
 .logo-studio {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #000000;
+}
+@media screen and (min-width: 480px) {
+  .logo-studio {
+    max-width: 480px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-studio {
+    max-width: 768px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-studio {
+    max-width: 1200px;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 88px;
+  }
 }
 
 .nav-hover:hover,
@@ -161,21 +273,64 @@ body {
   width: 100%;
 }
 
+.mobile-button {
+  background-color: var(--main-general-color);
+  border: none;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .mobile-button {
+    max-width: 768px;
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-button {
+    max-width: 1200px;
+    display: none;
+  }
+}
+
+.momile-icons {
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .momile-icons {
+    max-width: 768px;
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .momile-icons {
+    max-width: 1200px;
+    display: none;
+  }
+}
+
 .slogan {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Slogan.jpg);
   max-width: 100%;
   margin: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-width: 768px) {
   .slogan {
-    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118x;
   }
 }
 @media screen and (min-width: 1200px) {
   .slogan {
-    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .slogan {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .slogan-title {
@@ -195,6 +350,12 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .slogan-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 1600px) {
   .slogan-title {
     font-size: 44px;
     line-height: 1.36;
@@ -539,6 +700,7 @@ body {
 }
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
 }
@@ -561,6 +723,22 @@ body {
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .button-item {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-item {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-item {
+    max-width: 1200px;
+  }
 }
 .button-item:hover, .button-item:focus {
   background-color: #2196F3;
@@ -578,11 +756,23 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .images-item {
-  width: 370px;
+  width: 100%;
   border: 1px solid #EEEEEE;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .images-item {
+    max-width: 768px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .images-item {
+    max-width: 1200px;
+    width: calc((100% - 60px) / 3);
+  }
 }
 .images-item:hover .images-top-text {
   transform: translateY(0);
@@ -851,14 +1041,33 @@ body {
   margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  /* @media screen and (min-width: 1200px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+  } */
 }
 
 .footer .conteiner {
-  display: flex;
+  display: block;
 }
 
 .logo {
-  margin-right: 70px;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 768px;
+    display: inline-block;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    max-width: 1200px;
+    margin-left: 0px;
+    text-align: left;
+  }
 }
 .logo__web {
   font-family: "Raleway";
@@ -901,8 +1110,26 @@ body {
 }
 
 .network {
-  padding-top: 8px;
-  margin-right: 93px;
+  margin-top: 60px;
+  text-align: center;
+  /*     padding-top: 8px;
+      margin-right: 93px; */
+}
+@media screen and (min-width: 768px) {
+  .network {
+    max-width: 768px;
+    display: inline-block;
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .network {
+    max-width: 1200px;
+    margin-right: 94px;
+    margin-top: 0px;
+    margin-left: 70px;
+    /* padding-top: 8px; */
+  }
 }
 .network__title {
   font-weight: 700;
@@ -916,6 +1143,7 @@ body {
   margin-top: 20px;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .network__link {
   width: 44px;
@@ -937,7 +1165,19 @@ body {
 }
 
 .subscription {
+  margin-top: 60px;
   padding-top: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    display: inline-block;
+    text-align: left;
+    margin-top: auto;
+    /* margin-left: 93px; */
+    /*  text-align: center; */
+    /* padding-top: 8px; */
+  }
 }
 .subscription__input-title {
   font-weight: 700;
@@ -949,15 +1189,27 @@ body {
   margin-bottom: 20px;
 }
 .subscription__form-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
-  margin-right: 12px;
+  /* margin-right: 12px; */
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscription__form-input {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__form-input {
+    max-width: 358px;
+    display: inline;
+  }
 }
 .subscription__input-button {
   display: inline-flex;

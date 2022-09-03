@@ -12,6 +12,12 @@
 &-nav-list {
     display: flex;
     gap: 50px;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }    
 }
 
 &-item {
@@ -25,9 +31,34 @@
 }
 
 &-contact-pre {
-    display: flex;
+    display: none;
+/*     display: flex;
     margin-left: auto;
-    gap: 50px;
+    gap: 50px; */
+    margin-right: auto;
+/*     @media screen and (max-width: 480px) {
+        max-width: 480px;
+        display: none;
+    } */
+/*     @media screen and (min-width: 480px) {
+        max-width: 480px;
+        display: none;
+    } */
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+        margin-left: auto;        
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-left: auto;
+    }  
 }
 
 &-contact {
@@ -36,6 +67,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        font-size: 12px;
+    }      
+    
 }
 
 &-contact-pre-icon {
@@ -55,25 +91,70 @@
 }
 }
 
+.header-nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: block;
+    }    
+}
+
 
 .logo-web {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #2196F3;
-    margin-right: 94px;     
+    margin-right: 88px;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        font-size: 24px;
+        line-height: 1.16;
+        margin-right: 58px;
+    }      
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 88px;
+    }   
 }
 .logo-studio {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000000;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        font-size: 24px;
+        line-height: 1.16;
+    }     
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        font-size: 24px;
+        line-height: 1.16;
+    }      
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 88px;
+    }   
 }
 
 .nav-hover:hover,
@@ -108,5 +189,31 @@
     top: 44px;
     left: 0;
     width: 100%;
+}
+
+.mobile-button {
+    background-color: var(--main-general-color);
+    border: none;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: none;
+    }
+}
+.momile-icons {
+    justify-content: center;
+    align-content: center;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: none;
+    }
 }
 

@@ -1,8 +1,17 @@
 .header {
     background: #FFFFFF;
     padding-top: 24px;
-    height: 80px;
+    height: 60px;
     border-bottom: 1px solid #ECECEC;
+    @media screen and (min-width: 768px) {
+        /* max-width: 768px; */
+        height: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        /* max-width: 1200px; */
+        height: 80px;
+        
+    }
     
 & .conteiner {
     display: flex;
@@ -32,32 +41,22 @@
 
 &-contact-pre {
     display: none;
-/*     display: flex;
-    margin-left: auto;
-    gap: 50px; */
     margin-right: auto;
-/*     @media screen and (max-width: 480px) {
-        max-width: 480px;
-        display: none;
-    } */
-/*     @media screen and (min-width: 480px) {
-        max-width: 480px;
-        display: none;
-    } */
+
     @media screen and (min-width: 768px) {
         max-width: 768px;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         
-        margin-left: auto;        
+        margin-left: 84px;        
     }
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        margin-left: auto;
+        margin-right: 0px;
     }  
 }
 
@@ -112,23 +111,23 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #2196F3;
-    margin-right: 88px;
+    margin-right: 15px;
     @media screen and (min-width: 480px) {
-        max-width: 480px;
+        /* max-width: 480px; */
         font-size: 24px;
         line-height: 1.16;
     }
     @media screen and (min-width: 768px) {
-        max-width: 768px;
+        
         font-size: 24px;
         line-height: 1.16;
         margin-right: 58px;
     }      
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        
         font-size: 26px;
         line-height: 1.19;
-        margin-right: 88px;
+        margin-right: 93px;
     }   
 }
 .logo-studio {
@@ -256,8 +255,11 @@
 .menu-item {
     @include font (500, 40px, 1.175, 0.02em);
     color: var(--main-title-color);
-    
+}
 
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--main-item-color)
 }
 
 .menu-tel-link {
@@ -272,11 +274,37 @@
 
 .menu-network {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-top: 64px;
 
 }
 
 .menu-network-item {
+    color: var(--main-item-color);    
+}
+
+.menu-network-list:not(:last-child) {
     color: var(--main-item-color);
+    border-right: 1px solid rgba(33, 33, 33, 0.2); 
+    padding-right: 10px;
+}
+
+.menu-close-black {
+    border: none;
+}
+
+.menu-close-btn {
+    border: none;
+    background-color: var(--main-general-color);
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.menu-close-black:hover,
+.menu-close-black:focus {
+    fill: var(--main-item-color)
+}
+
+.menu-button {
+    margin-right: auto;
 }

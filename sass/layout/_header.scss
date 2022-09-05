@@ -1,21 +1,25 @@
 .header {
     background: #FFFFFF;
-    padding-top: 24px;
+    padding-top: 16px;
     height: 60px;
     border-bottom: 1px solid #ECECEC;
+    align-items: center;
     @media screen and (min-width: 768px) {
         /* max-width: 768px; */
         height: 80px;
+        padding-top: 20px;
     }
     @media screen and (min-width: 1200px) {
         /* max-width: 1200px; */
         height: 80px;
+        padding-top: 24px;
         
     }
     
 & .conteiner {
     display: flex;
-    align-items: center;    
+    align-items: center;
+        
 }
 
 &-nav-list {
@@ -44,7 +48,7 @@
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
+        /* max-width: 768px; */
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -56,7 +60,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        margin-right: 0px;
+        margin-left: 225px;
     }  
 }
 
@@ -195,6 +199,7 @@
     border: none;
     margin-left: auto;
     cursor: pointer;
+
     @media screen and (min-width: 768px) {
         max-width: 768px;
         display: none;
@@ -204,6 +209,7 @@
         display: none;
     }
 }
+
 .momile-icons {
     justify-content: center;
     align-content: center;
@@ -305,6 +311,20 @@
     fill: var(--main-item-color)
 }
 
-.menu-button {
-    margin-right: auto;
+.menu-button {    
+    position: absolute;
+    right: 23px;
+    top: 22px;
+    color: var(--main-title-color);
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    fill: var(--main-item-color)
 }

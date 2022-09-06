@@ -58,13 +58,6 @@ body {
     max-width: 1200px;
   }
 }
-@media screen and (min-width: 1600px) {
-  .conteiner {
-    padding-right: 0px;
-    padding-left: 0px;
-    max-width: 1600px;
-  }
-}
 
 .header {
   background: #FFFFFF;
@@ -132,7 +125,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    margin-left: 225px;
+    margin-left: 282px;
+    margin-right: 0px;
   }
 }
 .header-contact {
@@ -146,6 +140,12 @@ body {
   .header-contact {
     max-width: 768px;
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header-contact {
+    max-width: 1200px;
+    font-size: 14px;
   }
 }
 .header-contact-pre-icon {
@@ -189,7 +189,6 @@ body {
 }
 @media screen and (min-width: 480px) {
   .logo-web {
-    /* max-width: 480px; */
     font-size: 24px;
     line-height: 1.16;
   }
@@ -234,10 +233,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo-studio {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 88px;
+    /* margin-right: 88px; */
   }
 }
 
@@ -321,6 +320,12 @@ body {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+.mob-menu > .conteiner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-close-btn {
@@ -505,11 +510,13 @@ body {
 @media screen and (min-width: 768px) {
   .subtitle {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
     padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 .subtitle-list {
@@ -662,12 +669,30 @@ body {
 }
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   display: flex;
@@ -763,11 +788,27 @@ body {
 }
 .regular-clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .regular-clients-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 .regular-clients-list {
   display: flex;
@@ -814,14 +855,36 @@ body {
 
 .button {
   background: #FFFFFF;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .button-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  justify-content: left;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    justify-content: center;
+  }
 }
 .button-item {
   font-family: "Roboto";
@@ -869,7 +932,17 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .images {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .images {
+    margin-top: 50px;
+  }
 }
 .images-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1268,6 +1341,7 @@ body {
     max-width: 768px;
     display: inline-block;
     margin-left: 165px;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1277,6 +1351,7 @@ body {
     margin-top: 0px;
     margin-left: 0px;
     padding-top: 8px;
+    margin-top: 0px;
   }
 }
 .network__title {

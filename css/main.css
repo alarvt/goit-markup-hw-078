@@ -68,14 +68,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    /* max-width: 768px; */
     height: 80px;
     padding-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    /* max-width: 1200px; */
     height: 80px;
     padding-top: 24px;
   }
@@ -112,7 +110,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-contact-pre {
-    /* max-width: 768px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -121,7 +118,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-contact-pre {
-    /* max-width: 1200px; */
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -233,10 +229,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo-studio {
-    /* max-width: 1200px; */
     font-size: 26px;
     line-height: 1.19;
-    /* margin-right: 88px; */
   }
 }
 
@@ -320,12 +314,6 @@ body {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
-  /*  >.conteiner {
-       height: 100%;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-   } */
 }
 
 .mob-menu-top {
@@ -348,13 +336,12 @@ body {
 }
 
 .menu-contact-pre {
-  /* margin-top: 302px; */
   position: absolute;
   bottom: 134px;
 }
 
 .menu-contact-m {
-  padding-bottom: 50px;
+  padding-bottom: 32px;
 }
 
 .menu-item {

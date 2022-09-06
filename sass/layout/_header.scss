@@ -5,12 +5,10 @@
     border-bottom: 1px solid #ECECEC;
     align-items: center;
     @media screen and (min-width: 768px) {
-        /* max-width: 768px; */
         height: 80px;
         padding-top: 20px;
     }
     @media screen and (min-width: 1200px) {
-        /* max-width: 1200px; */
         height: 80px;
         padding-top: 24px;
         
@@ -48,7 +46,6 @@
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-        /* max-width: 768px; */
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -56,7 +53,6 @@
         margin-left: 84px;        
     }
     @media screen and (min-width: 1200px) {
-        /* max-width: 1200px; */
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
@@ -159,10 +155,8 @@
         line-height: 1.16;
     }      
     @media screen and (min-width: 1200px) {
-        /* max-width: 1200px; */
         font-size: 26px;
         line-height: 1.19;
-        /* margin-right: 88px; */
     }   
 }
 
@@ -239,12 +233,7 @@
     height: 100vh;
     padding-top: 48px;
     padding-bottom: 48px;
-   /*  >.conteiner {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    } */
+
 }
 
 .mob-menu-top {
@@ -269,14 +258,13 @@
 }
 
 .menu-contact-pre {
-    /* margin-top: 302px; */
     position: absolute;
     bottom: 134px;
     
 }
 
 .menu-contact-m {
-    padding-bottom: 50px;
+    padding-bottom: 32px;
 }
 
 .menu-item {
